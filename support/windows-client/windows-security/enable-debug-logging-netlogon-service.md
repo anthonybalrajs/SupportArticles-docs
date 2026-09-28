@@ -38,7 +38,7 @@ To enable `Netlogon` logging:
 2. Type the following command, and then press Enter:  
 
     ```console
-    Nltest /DBFlag:2080FFFF
+    Nltest /DBFlag:0x2080FFFF
     ```
 
 3. It's typically unnecessary to stop and restart the `Netlogon` service for Windows Server 2012 R2 or later to enable `Netlogon` logging. Netlogon-related activity is logged to %windir%\debug\netlogon.log. Verify new writes to this log to determine whether a restart of the `Netlogon` service is necessary. If you have to restart the service, open a Command Prompt window (administrative Command Prompt window for Windows 10, and Windows Server 2012 R2 and later versions). Then run the following commands:
